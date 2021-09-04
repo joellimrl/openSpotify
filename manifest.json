@@ -1,0 +1,19 @@
+{
+	"manifest_version": 3,
+
+	"name": "Gender equalizer",
+	"description": "Transforms man to woman",
+	"version": "1.0",
+	"content_scripts": [
+		{
+			"matches": ["*://*/*"],
+			"js": ["replacer.js"],
+			"run_at": "document_end"
+		}
+	],
+	"icons": {
+		"16": "icon_16.png",
+		"48": "icon_48.png",
+		"128": "icon_128.png"
+	}
+}
