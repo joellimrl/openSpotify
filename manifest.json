@@ -1,19 +1,25 @@
 {
 	"manifest_version": 3,
 
-	"name": "Gender equalizer",
-	"description": "Transforms man to woman",
+	"name": "Automatic Spotify opener",
+	"description": "Opens spotify links in desktop app automatically",
 	"version": "1.0",
-	"content_scripts": [
-		{
-			"matches": ["*://*/*"],
-			"js": ["replacer.js"],
-			"run_at": "document_end"
+	"background": {
+		"service_worker": "background.js"
+	},
+	"action": {
+		"default_popup": "index.html",
+		"default_icon": {
+			"16": "/images/icon_16.png",
+			"48": "/images/icon_48.png",
+			"128": "/images/icon_128.png"
 		}
-	],
+	},
 	"icons": {
-		"16": "icon_16.png",
-		"48": "icon_48.png",
-		"128": "icon_128.png"
-	}
+		"16": "/images/icon_16.png",
+		"48": "/images/icon_48.png",
+		"128": "/images/icon_128.png"
+	},
+	"permissions": ["tabs", "activeTab"],
+	"options_page": "index.html"
 }

@@ -1,6 +1,12 @@
-# Gender equalizer
+# Automatic Spotify link opener
 
-Revolutionise your browsing experience now
+Automatically opens Spotify links in the desktop app
 
-- Transforms "men" to "women" for peace of mind
-- Transforms "man" to "woman" for health reasons
+- open.spotify.com/\*
+
+## TODOS
+
+- Options page
+  - Close web page on spotify app load
+  - Create alert before proceeding to web page
+- popup html
