@@ -8,5 +8,4 @@ Automatically opens Spotify links in the desktop app
 
 - Options page
   - Close web page on spotify app load
-  - Create alert before proceeding to web page
-- popup html
+- Limit search (remove /search)
