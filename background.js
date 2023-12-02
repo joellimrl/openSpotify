@@ -25,8 +25,8 @@ async function getAllStorageSyncData() {
 
 async function getCurrentTab() {
 	let queryOptions = { active: true, currentWindow: true };
-	let [tab] = await chrome.tabs.query(queryOptions);
-	return tab;
+	let tabs = await chrome.tabs.query(queryOptions);
+	return tabs[0];
 }
 
 // Workaround for tab error ( Tabs cannot be edited right now (user may be dragging a tab))
